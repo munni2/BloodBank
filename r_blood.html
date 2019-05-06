@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>blood bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--font-awesome-->
+  <link href="css/font-awesome.min.css" rel="stylesheet" media="screen"/>
+  <!--bootstrap-->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+  <!--bootstrap datetime picker-->
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen"/>
+  <!--wow style-->
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="d_hd_bg">
+  <div class="main">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="collapsed navbar-toggle" data-toggle="collapse" data-target="#mainnav">
+            <i class="fa fa-bars"></i>
+          </button>
+          <a href="" class="navbar-brand">
+            <img src="images/logof.png">
+          </a>
+        </div>
+        
+        <div id="mainnav" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="d_list.html">Donar list</a></li>
+            <li><a href="h_tips.html">Health tips</a></li>
+            <li><a href="r_blood.html">Request blood</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<div class="request_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+          <legend>Request for blood</legend>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">Patient Name</label>  
+            <div class="col-md-9 inputGroupContainer">
+              <input  name="first_name" placeholder="Patient Name" class="form-control"  type="text" required>
+            </div>
+          </div>
+
+          <div class="form-group"> 
+            <label class="col-md-3 control-label">Blood Group</label>
+            <div class="col-md-9 selectContainer">
+              <select name="state" class="form-control selectpicker" >
+                <option value=" " >Please select your blood group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option >B+</option>
+                <option >B-</option>
+                <option >AB+</option>
+                <option >AB-</option>
+                <option >O+</option>
+                <option >O-</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">Contact No</label>  
+            <div class="col-md-9 inputGroupContainer">
+              <input  name="first_name" placeholder="contact no" class="form-control"  type="text">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">Address</label>
+            <div class="col-md-9 inputGroupContainer">
+              <textarea class="form-control" name="comment" placeholder="enter your address"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-8">
+              <button type="submit" class="btn btn-warning" >Send</button>
+            </div>
+          </div>
+        </form>
+      </div><!-- co-md-6 -->
+
+      <div class="col-md-6">
+        <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+          <legend>Rgister as a blood donor</legend>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">Full Name</label>  
+            <div class="col-md-9 inputGroupContainer">
+              <input  name="first_name" placeholder="first Name" class="form-control"  type="text">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">Email id</label>  
+            <div class="col-md-9 inputGroupContainer">
+              <input  name="first_name" placeholder="email id" class="form-control"  type="text">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">Password</label>  
+            <div class="col-md-9 inputGroupContainer">
+              <input  name="first_name" placeholder="enter your pass" class="form-control"  type="text">
+            </div>
+          </div>
+
+          <div class="form-group"> 
+            <label class="col-md-3 control-label">Blood Group</label>
+            <div class="col-md-9 selectContainer">
+              <select name="state" class="form-control selectpicker" >
+                <option value=" " >Please select your blood group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option >B+</option>
+                <option >B-</option>
+                <option >AB+</option>
+                <option >AB-</option>
+                <option >O+</option>
+                <option >O-</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">Contact No</label>  
+            <div class="col-md-9 inputGroupContainer">
+              <input  name="first_name" placeholder="contact no" class="form-control"  type="text">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">Address</label>
+            <div class="col-md-9 inputGroupContainer">
+              <textarea class="form-control" name="comment" placeholder="enter your address"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">Gander</label>
+            <div class="col-md-9">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="hosting" value="yes" />Male
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="hosting" value="no" />Female
+                    </label>
+                </div>
+            </div>
+          </div>
+
+           <div class="form-group">
+            <label class="col-md-3 control-label">Date Of Birth</label>
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-8">
+              <button type="submit" class="btn btn-warning" >Send</button>
+            </div>
+          </div>
+        
+
+        </form>
+      </div><!-- co-md-6 -->
+
+    </div>
+  </div><!-- container -->
+</div><!-- request_area-->
+
+<div class="footer_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 copy wow bounceIn" data-wow-duration="2s" data-wow-delay="0.3s">
+          <p>Copyright &copy; 2016 BD. All Rights Reserved.</P>
+          <p>Design by munni..</P>
+        </div>
+        <div class="col-md-6 social_media wow bounce" data-wow-duration="3s" data-wow-delay="0.3s">
+          <p>Find us</p>
+          <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div><!--end of footer_area-->
+
+  <div class="col-md-offset-11 col-md-1">
+    <p id="back-top">
+      <a href="#top"><span></span></a>
+    </p>
+  </div>
+
+
+
+
+
+  <!--jquery-->
+  <script src="js/jquery-1.12.4.min.js"></script> 
+  <!--bootstrap jquery-->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!--fittext-->
+  <script src="js/jquery.fittext.js"></script>
+  <!--fittext-->
+
+  <!--count-up-->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> 
+  <script src="js/jquery.counterup.min.js"></script> 
+  <!--count-up-->
+
+  <!--wow js-->
+  <script src="js/wow.min.js"></script>
+
+  <!--coustom jquery-->
+  <script src="js/main.js"></script>
+
+  <!--datepicker-->
+  <script src="js/moment.js"></script>
+  <script src="js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+  </script>           
+  <!--datepicker-->
+
+</body>
+</html>
