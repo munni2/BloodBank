@@ -5,12 +5,12 @@
 /*=========================================================================
         Preloader
 =========================================================================*/
-     $(window).on('load', function() { // makes sure the whole site is loaded 
-            $('body').addClass("preloader_active");
-            $('.preloader_spinner').delay(6000).fadeOut(); // will first fade out the loading animation 
-            $('#preloader').delay(6000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-            $('body').removeClass("preloader_active");
-        });     
+     // $(window).on('load', function() { 
+     //        $('body').addClass("preloader_active");
+     //        $('.preloader_spinner').delay(6000).fadeOut(); 
+     //        $('#preloader').delay(6000).fadeOut('slow');
+     //        $('body').removeClass("preloader_active");
+     //    });     
 
 /*=========================================================================
         back to top
